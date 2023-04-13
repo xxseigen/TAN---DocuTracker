@@ -1,0 +1,478 @@
+/*!
+* Start Bootstrap - SB UI Kit Pro v2.0.4 (https://shop.startbootstrap.com/product/sb-ui-kit-pro)
+* Copyright 2013-2022 Start Bootstrap
+* Licensed under SEE_LICENSE (https://github.com/BlackrockDigital/sb-ui-kit-pro/blob/master/LICENSE)
+*/
+
+/* Global Styles */
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr:not([size]) {
+    height: 1px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    scroll-padding-top: 80px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Containers */
+@media (min-width: 768px) {
+
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1440px;
+    }
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.875rem 1.125rem;
+    font-size: 0.875rem;
+    border-radius: 0.35rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-color1 {
+    color: #283971;
+    background-color: #ECEDEE;
+    border-color: #ECEDEE;
+}
+
+.btn-color2 {
+    color: #fff;
+    background-color: #283971;
+    border-color: #283971;
+}
+
+.btn-color3 {
+    color: #fff;
+    background-color: #B99433;
+    border-color: #B99433;
+}
+
+.btn-color4 {
+    color: #283971;
+    background-color: #E3EEF5;
+    border-color: #E3EEF5;
+}
+
+.btn-outline-color1 {
+    color: #283971;
+    border-color: none;
+}
+
+.btn .feather {
+    margin-top: -1px;
+    height: 0.875rem;
+    width: 0.875rem;
+}
+
+/* Colors */
+.text-color1,
+.text-color1-50 {
+    color: #ECEDEE !important;
+}
+
+.text-color2,
+.text-color2-50 {
+    color: #283971 !important;
+}
+
+.text-color3 {
+    color: #B99433 !important;
+}
+
+.text-color4 {
+    color: #E3EEF5 !important;
+}
+
+.text-color1-50 {
+    --bs-text-opacity: 1;
+}
+
+.text-color2-50 {
+    --bs-text-opacity: 1;
+}
+
+.text-reset,
+.footer a {
+    --bs-text-opacity: 1;
+    color: inherit !important;
+}
+
+.bg-color1 {
+    background-color: #ECEDEE !important;
+}
+
+.bg-color2 {
+    background-color: #283971 !important;
+}
+
+.bg-color3 {
+    background-color: #B99433 !important;
+}
+
+.bg-color4 {
+    background-color: #E3EEF5 !important;
+}
+
+/* Header */
+.fixed-top,
+.page-header-ui.navbar-fixed .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-marketing {
+    transition: background-color 0.15s ease-in-out;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+
+.navbar-marketing .navbar-toggler {
+    padding: 0.5rem;
+    border: 0;
+}
+
+.navbar-marketing .navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar-marketing .navbar-nav {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+
+.navbar-marketing .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+}
+
+@media (min-width: 992px) {
+    .navbar-marketing {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-marketing .navbar-nav {
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+    }
+
+    .navbar-marketing .navbar-nav .nav-item {
+        margin-right: 1rem;
+    }
+
+    .navbar-marketing .navbar-nav .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    .navbar-marketing.fixed-top,
+    .page-header-ui.navbar-fixed .navbar-marketing.navbar {
+        max-height: none;
+        overflow-y: visible;
+    }
+}
+
+.navbar-marketing.fixed-top,
+.page-header-ui.navbar-fixed .navbar-marketing.navbar {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+
+@media (min-width: 992px) {
+
+    .navbar-marketing.fixed-top,
+    .page-header-ui.navbar-fixed .navbar-marketing.navbar {
+        max-height: none;
+        overflow-y: visible;
+    }
+}
+
+.navbar-marketing.bg-color1.navbar-scrolled {
+    background-color: #ECEDEE !important;
+}
+
+.nav-underline .nav-link {
+    color: #283971 !important;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .nav-link:focus {
+    font-weight: bold;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .nav-link:focus,
+.nav-underline .nav-link:hover {
+    color: #B99433 !important;
+}
+
+.dropdown-toggle::after {
+    border-top-color: #283971;
+}
+
+/* Skewed Content */
+.content-skewed {
+    perspective: 1500px !important;
+    transform-style: preserve-3d !important;
+}
+
+.content-skewed-right {
+    perspective-origin: right center !important;
+}
+
+.text-uppercase-expanded,
+.navbar .dropdown-menu .dropdown-header {
+    font-weight: 700;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+}
+
+/* Icon stack */
+.feather {
+    height: 1rem;
+    width: 1rem;
+    vertical-align: top;
+}
+
+.icon-stack {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+    background-color: #f2f6fc;
+    flex-shrink: 0;
+}
+
+.icon-stack svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+
+.icon-stack-lg {
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.5rem;
+}
+
+.icon-stack-lg svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.icon-stack-xl {
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.75rem;
+}
+
+.icon-stack-xl svg {
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+/* Section */
+section {
+    position: relative;
+}
+
+/* Position */
+.fixed {
+    position: fixed;
+    width: 250px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}
+
+.search-results {
+    width: calc(100% - 320px);
+    overflow-y: auto;
+}
+
+/* SVG Border Rounded */
+.svg-border-rounded svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1rem;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .svg-border-rounded svg {
+        height: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .svg-border-rounded svg {
+        height: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .svg-border-rounded svg {
+        height: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .svg-border-rounded svg {
+        height: 3rem;
+    }
+}
+
+/* Padding */
+.pt-10,
+.py-10 {
+    padding-top: 6rem !important;
+}
+
+.py-10 {
+    padding-bottom: 6rem !important;
+}
+
+/* Modal */
+@media (min-width: 576px) {
+    .modal-dialog {
+        width: 370px;
+    }
+}
+
+/* Form */
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(48, 154, 198, 0.25);
+}
+
+.form-check-input:focus {
+    border-color: #B99433;
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    background-color: #B99433;
+    border-color: #B99433;
+}
+
+#search-bar {
+    background-color: #f8f9fa;
+}
+
+#search-bar::placeholder {
+    color: #d2d3e3;
+}
+
+#search-bar:focus {
+    border-color: #e0e4e4;
+    box-shadow: none;
+}
+
+.input-group:focus-within svg {
+    fill: #283971;
+}
+
+/* Footer */
+.footer {
+    font-size: 0.875rem;
+}
+
+.footer .footer-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+/* Modal footer */
+.modal-footer .text-center {
+    width: 100%;
+}
+
+/* Page header */
+.page-header-ui {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.page-header-ui .page-header-ui-content .page-header-ui-title {
+    font-size: 2.5rem;
+}
+
+.page-header-ui-dark {
+    color: #fff;
+    background-color: #212832;
+}
+
+.page-header-ui-dark .page-header-ui-title {
+    color: #fff;
+}
