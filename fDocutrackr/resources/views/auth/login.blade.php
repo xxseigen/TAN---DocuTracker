@@ -39,6 +39,11 @@
 
 </head>
 <body class="d-flex flex-column h-100 login-page">
+<div class="login-box">
+    <div class="login-logo">
+        <a href="{{ route('home') }}"><b>DocuTrackr </b></a>
+    </div>
+
     <main class="flex-shrink-0">
 
     <div class="login-box">
@@ -95,7 +100,6 @@
 <!-- /.login-box -->
         
     </main>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

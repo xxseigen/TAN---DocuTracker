@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>hello</title>
     <title>{{config('settings.system_title')}}</title>
 
     <!-- Fonts -->
@@ -24,6 +23,49 @@
             background-size: cover;
         }
 
+        .full-height {
+            height: 100vh;
+        }
+
+        .flex-center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .position-ref {
+            position: relative;
+        }
+
+        .top-right {
+            position: absolute;
+            right: 10px;
+            top: 18px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 84px;
+        }
+
+        .links > a {
+            color: #636b6f;
+            padding: 5px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid #636b6f;
+            border-radius: 10px;
+        }
+
+        .m-b-md {
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body>

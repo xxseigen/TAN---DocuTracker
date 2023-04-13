@@ -11,14 +11,11 @@
 |
 */
 
-//starting route
 Route::get('/', 'HomeController@welcome')->name('home');
-
 
 Route::get('/archive', function () {
     return view('layouts.archival.archival');
 });
-
 
 Route::get('config', function () {
     Artisan::call('route:clear');
