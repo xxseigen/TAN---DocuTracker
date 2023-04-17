@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class UsersTableSeeder extends Seeder
 {
@@ -15,8 +16,8 @@ class UsersTableSeeder extends Seeder
         \App\User::create([
             'name' => 'Super Admin',
             'username' => 'super',
-            'password' => bcrypt('123456'),
+            'password' => bcrypt('password'),
             'status' => config('constants.STATUS.ACTIVE')
-        ]);
+        ])->assignRole('Super Admin');
     }
 }

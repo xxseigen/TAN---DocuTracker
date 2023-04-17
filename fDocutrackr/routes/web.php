@@ -35,6 +35,12 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth','check_block']], func
         Route::resource('custom-fields', 'CustomFieldController', ['names' => 'customFields']);
         Route::resource('file-types', 'FileTypeController', ['names' => 'fileTypes']);
     });
+
+    //Roles
+    Route::get('roles', 'RoleController@index')->name('admin.roles');
+    
+
+    //Users
     Route::resource('users', 'UserController');
     Route::get('/users-block/{user}', 'UserController@blockUnblock')->name('users.blockUnblock');
     Route::resource('tags', 'TagController');

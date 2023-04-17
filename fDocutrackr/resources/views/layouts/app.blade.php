@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>@yield('title') | {{config('settings.system_title')}}</title>
+    <title>@yield('title') | DocuTrackr</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
@@ -26,8 +26,8 @@
 
             <!-- Logo -->
             <a href="{{route('admin.dashboard')}}" class="hidden-xs logo">
-                <span class="logo-mini"><b>{{config('settings.system_title')[0]}}</b></span>
-                <span class="logo-lg"><b>{{config('settings.system_title')}}</b></span>
+                <span class="logo-mini"><b>Docutrackr[0]</b></span>
+                <span class="logo-lg"><b>DocuTrackr</b></span>
             </a>
 
             <!-- Header Navbar -->

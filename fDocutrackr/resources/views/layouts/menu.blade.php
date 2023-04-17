@@ -1,11 +1,26 @@
 <li class="{{ Request::is('admin/home*') ? 'active' : '' }}">
     <a href="{!! route('admin.dashboard') !!}"><i class="fa fa-home"></i><span>Home</span></a>
 </li>
+
+<!-- ROLES -->
+@canany('Super Admin | Admin ')
+@can('read users')
+    <li class="">
+        <a href="{!! route('admin.roles') !!}"><i class="fa fa-users"></i><span>Roles</span></a>
+    </li> 
+@endcan
+@endcanany
+
+<!-- USERS -->
+@canany('Super Admin | Admin | Faculty')
 @can('read users')
     <li class="{{ Request::is('admin/users*') ? 'active' : '' }}">
         <a href="{!! route('users.index') !!}"><i class="fa fa-users"></i><span>Users</span></a>
     </li>
 @endcan
+@endcanany
+
+<!-- TAGS -->
 @can('read tags')
     <li class="{{ Request::is('admin/tags*') ? 'active' : '' }}">
         <a href="{!! route('tags.index') !!}"><i

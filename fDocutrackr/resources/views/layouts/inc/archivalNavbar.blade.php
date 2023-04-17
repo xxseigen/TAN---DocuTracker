@@ -17,8 +17,10 @@
                 <li class="nav-item"><a class="nav-link text-color2" href="{{ url('/') }}">Home</a></li>
                 <li class="nav-item"><a class="nav-link text-color2" href="#about">About</a></li>
                 <!-- <li class="nav-item"><a class="nav-link text-color2" href="#">Contact</a></li> -->
+                @role('Superadmin | Admin | Faculty | Student' )
                 <li class="nav-item"><a class="nav-link text-color2" href="{{ url('/archive') }}">Research
                         Archive</a></li>
+                @endrole
             </ul>
             <!-- when user is logged in -->
             <!-- <div class="d-flex align-items-center">
